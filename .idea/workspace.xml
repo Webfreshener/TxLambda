@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9cbe0e3-6036-4a92-a090-2dd61094316e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixtures/api-get-request.mock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixtures/s3-put-notification.mock.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/api_event.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/s3_event.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/schemas/elb-request-event.schema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/schemas/elb-response-event.schema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/schemas/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/schemas/json-schema-draft-04.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/schemas/json-schema-draft-07.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/schemas/s3-event.schema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s3-event.test.js" afterDir="false" />
-    </list>
+    <list default="true" id="f9cbe0e3-6036-4a92-a090-2dd61094316e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +136,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
@@ -234,16 +221,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555859356481</updated>
-      <workItem from="1555859358180" duration="13265000" />
+      <workItem from="1555859358180" duration="14583000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13265000" />
+    <option name="totallyTimeSpent" value="14583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
