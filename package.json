@@ -23,9 +23,9 @@
   },
   "homepage": "https://github.com/Webfreshener/TxLambda#readme",
   "dependencies": {
-    "rxjs": "^6.4.0",
-    "rxjs-compat": "^6.4.0",
-    "txpipe": "git+https://github.com/Webfreshener/TxPipe.git"
+    "rxjs": "^6.5.1",
+    "rxjs-compat": "^6.5.1",
+    "txpipe": "git+https://github.com/Webfreshener/TxPipe.git#nesting-debug"
   },
   "devDependencies": {
     "chai": "^4.2.0",
