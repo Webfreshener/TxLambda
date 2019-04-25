@@ -8,7 +8,8 @@ describe("S3Event Tests", () => {
         const _event = S3Event();
         _event(event).then(
             (res) => {
-                expect(JSON.stringify(res)).toEqual(JSON.stringify(event));
+                expect(JSON.stringify(res))
+                    .toEqual("{\"Bucket\":\"txlambda-test-staging\",\"Key\":\"txlambda-test.data.json\"}");
                 done();
             },
             (e) => done(e),
