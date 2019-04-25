@@ -17,10 +17,13 @@ describe("S3Event Tests", () => {
 
     it("should execute callbacks", (done) => {
         const _event = S3Event({
-            callback: (d) => {
-                return {statusCode: 200};
-            }
-        }, {callback: (d) => Object.assign(d, _res)});
+                exec: (d) => {
+                    return {statusCode: 200};
+                }
+            },
+            {
+                exec: (d) => Object.assign(d, _res)
+            });
         _event(event).then(
             (res) => {
                 expect(res.statusCode).toEqual(200);
@@ -30,12 +33,17 @@ describe("S3Event Tests", () => {
             (e) => done(e),
         ).catch((e) => done(e));
     });
+
     it("should accept pipes", (done) => {
-        const _event = S3Event(new TxPipe({
-            exec: (d) => {
-                return {statusCode: 200};
-            }
-        }), {exec: (d) => Object.assign(d, _res)});
+        const _event = S3Event(
+            new TxPipe({
+                exec: (d) => {
+                    return {statusCode: 200};
+                }
+            }),
+            {
+                exec: (d) => Object.assign(d, _res)
+            });
         _event(event).then(
             (res) => {
                 expect(res.statusCode).toEqual(200);
