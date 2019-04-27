@@ -39,15 +39,15 @@ describe("S3Event Tests", () => {
         const _event = S3Event(
             new TxPipe({
                 exec: (d) => {
-                    return {statusCode: 200};
+                    return Object.assign(_res, {statusCode: 200});
                 }
             }),
             {
-                exec: (d) => Object.assign(d, _res)
+                exec: (d) => Object.assign(d, {statusCode: d.statusCode+50})
             });
         _event(event).then(
             (res) => {
-                expect(res.statusCode).toEqual(200);
+                expect(res.statusCode).toEqual(250);
                 expect(res.body).toEqual(_res.body);
                 done();
             },
