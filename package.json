@@ -1,6 +1,6 @@
 {
   "name": "txlambda",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "AWS Lambda Transaction Management",
   "main": "index.js",
   "scripts": {
