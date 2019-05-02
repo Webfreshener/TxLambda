@@ -23,5 +23,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ############################################################################ */
-module.exports.S3Event = require("./lib/s3_event");
-module.exports.APIEvent = require("./lib/api_event");
+module.exports.S3Event = require("./lib/s3-event");
+module.exports.APIEvent = require("./lib/api-event");
