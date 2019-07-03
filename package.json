@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "docs": "./node_modules/.bin/esdoc",
+    "dock-api": "docker run --rm -v \"$PWD\":/var/task -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY lambci/lambda:nodejs8.10 fixtures/api.handler \"$(cat ./fixtures/api-get-request.mock.json)\"",
     "test": "jest"
   },
   "repository": {
